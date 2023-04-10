@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.scss';
+import { NavBar } from "./Modulos/NavBar/NavBar";
+import { Fondo } from "./Modulos/Fondo/Fondo";
+import { Bienvenido } from "./Modulos/Bienvenido/Bienvenido";
+import { Carrusel } from "./Modulos/Carrusel/Carrusel";
+import { Servicios } from "./Modulos/Servicios/Servicios";
+import { Nosotras } from "./Modulos/Nosotras/Nosotras";
+import AltaContacto from "./Modulos/Formulario/AltaContacto.js";
+import { PiePagina } from './Modulos/PiePagina/PiePagina';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <NavBar/>
+     <Fondo/>
+     <Bienvenido/>
+     <Carrusel/>
+     <Servicios/>
+     <Nosotras/>
+     <AltaContacto/>
+     <PiePagina/>
     </div>
   );
 }
